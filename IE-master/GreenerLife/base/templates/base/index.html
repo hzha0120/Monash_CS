@@ -1,0 +1,228 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> Home Page - GreenerLife </title>
+    {% load static %}
+<!--[if lt IE 9]>
+	<script src="{% static 'js/html5shiv.js'%}"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="{% static 'js/mq.js'%}"></script>
+<![endif]-->
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width">
+<!-- Css Files Start -->
+<link href="{% static 'css/style.css'%}" rel="stylesheet" type="text/css" /><!-- All css -->
+<link href="{% static 'css/bootstrap.css'%}" rel="stylesheet" type="text/css" /><!-- Bootstrap Css -->
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="{% static 'css/customIE.css'%}" </><![endif]-->
+<link href="{% static 'css/font-awesome.css'%}" rel="stylesheet" type="text/css" /><!-- Font Awesome Css -->
+<link href="{% static 'css/font-awesome-ie7.css'%}" rel="stylesheet" type="text/css" /><!-- Font Awesome iE7 Css -->
+<!-- Css Files End -->
+<!-- Social Icons no JS -->
+<noscript>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/nj.css' %}" />
+</noscript>
+<!-- Social Icons no JS -->
+
+</head>
+<body>
+<!-- Start Main Wrapper -->
+<div class="wrapper">
+{% include 'header.html' %}
+<!-- End of Header -->
+<!-- Start of Header Banner -->
+	<section class="banner_slider mbtm">
+		 <ul id="banner_slider" >
+					<li>
+						<img src="{% static 'images/hamlin-school-food-waste.png'%}" alt="Banner Slider" />
+							<div class="slider_content">
+								<p class="b_dark"> Reduce </p>
+								<span class="clear"></span>
+								<p class="b_green">  Think Twice Before Wasting Food. </p>
+							</div>
+					</li>
+			 		<li>
+						<img src="{% static 'images/Egg-greenery.png'%}" alt="Banner Slider" />
+							<div class="slider_content">
+								<p class="b_dark"> Reuse </p>
+								<span class="clear"></span>
+								<p class="b_green"> The choice is yours: Save it or waste it. </p>
+							</div>
+					</li>
+			 		<li>
+						<img src="{% static 'images/recycle.png'%}" alt="Banner Slider" />
+							<div class="slider_content">
+								<p class="b_dark"> Recycle </p>
+								<span class="clear"></span>
+								<p class="b_green"> Recycle the present, save the future. </p>
+							</div>
+					</li>
+		 </ul>
+	 </section>
+<!-- End of Header Banner -->
+
+<!-- Start of Features Boxes -->
+	<section id="ngo_features" class="mbtm">
+		<section class="container-fluid container">
+		<section class="row-fluid">
+			<!-- Start of Features Box 1 -->
+			<figure class="span3 feature" >
+			<div class="ftr_img f-img-1">
+<!--				<div style="BACKGROUND: url('../../../static/images/feature_img_1_hover.png')  no-repeat center;">-->
+				<img src="{% static 'images/e-waste-logo.png'%}" style="height: 80px;width:80px;margin-left: 35% "/>
+			</div>
+			<div class="ftr_txt">
+			<strong> E-waste</strong>
+			<p> The Victorian Government has banned disposing E-Waste to landfill. Do not throw it to general waste bin. Kindly dispose it to nearby recycling center.   </p>
+			</div>
+		</figure>
+
+			<!-- End of Features Boxes 1 -->
+			
+			<!-- Start of Features Box 2 -->
+			<figure class="span3 feature" >
+			<div class="ftr_img">
+				<img src="{% static 'images/clothing-waste-logo.png'%}" style="height: 80px;width:80px;margin-left: 35% "/>
+			</div>
+			<div class="ftr_txt">
+			<strong> Clothing  </strong>
+			<p>  Avoid placing clothing and textiles into your household recycling bin. Instead, you can donate it to family, charity shops, organization and more.  </p>
+			</div>
+		</figure>
+			<!-- End of Features Boxes 2 -->
+			
+			<!-- Start of Features Box 3 --> 
+			<figure class="span3 feature">
+			<div class="ftr_img f-img-3">
+				<img src="{% static 'images/detection.png'%}" style="height: 80px;width:80px;margin-left: 35% "/>
+			</div>
+			<div class="ftr_txt">
+			<strong> Detection   </strong>
+			<p> With our garbage detection, you can easily sort the garbage and put them into the correct bins. </p>
+			</div>
+		</figure>
+			<!-- End of Features Boxes 3 -->
+			
+			<!-- Start of Features Box 4 -->		
+<!--			<figure class="span3 feature">-->
+<!--			<div class="ftr_img f-img-4"> -->
+<!--				<span class="img"> Tsunami </span>-->
+<!--			</div>-->
+<!--			<div class="ftr_txt">-->
+<!--			<strong> placeholder   </strong>-->
+<!--			<p>  placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholderplaceholder placeholder </p>-->
+<!--			</div>-->
+<!--		</figure>-->
+ 			<!-- End of Features Boxes 4 -->
+	</section>
+	</section>
+	</section>
+<!-- End of Features Boxes -->
+
+
+<!-- Start of Charity News & Progress Section -->
+	<section id="progress_news" class="mbtm">
+		<section class="container-fluid container">
+			<section class="row-fluid">
+				<figure class="span11" id="news">
+						<ul id="news_slider">
+						<li> 
+							<div class="span5 first" id="img_holder1">
+								<div class="img">
+								<img src="{% static 'images/news.png'%}" alt="" />
+								</div>
+								<div class="img_title">
+								<a href="#"> ABC NEWS </a>
+								<p> The Melbourne recycling program helping translate confusing rules to reduce waste  </p>
+								</div>
+							</div>
+							<div class="span5 ns_desc" >
+							<a href="#" class="title">  The Melbourne recycling program helping translate confusing rules to reduce waste <span class="h-line"></span> </a>
+ 							<p> When Chamila Hettiargchchige moved to Melbourne from rural Sri Lanka 17 years ago, recycling was one of the many things that was new to her. "The plastic and all the other recycling items like the paper, cardboard and all the other things, we used to burn them," she said.
+
+Now, she is a model of waste reduction — separating soft plastics, composting food scraps and putting things in the right bins. </p>
+							<a href="https://www.abc.net.au/news/2019-11-24/learning-to-recycle-when-you-dont-have-a-word-for-it/11729690" class="rm"> View All News &nbsp;  <i class="icon-plus"></i></a>
+							</div> 
+						</li>
+
+							<li>
+							<div class="span5 first" id="img_holder2">
+								<div class="img">
+								<img src="{% static 'images/news2.png'%}" alt="" />
+								</div>
+								<div class="img_title">
+								<a href="#"> ABC NEWS </a>
+								<p> Contaminating recyclables sees perfectly good recycling materials end up in landfill  </p>
+								</div>
+							</div>
+							<div class="span5 ns_desc" >
+							<a href="#" class="title">  Contaminating recyclables sees perfectly good recycling materials end up in landfill <span class="h-line"></span> </a>
+ 							<p> In a Senate Environment Committee report handed down last June, one of Australia's largest recycling companies, Visy, lamented a household habit that it said "may doom tonnes of other recyclable items to waste". They called it 'wish-cycling'.
+
+"Wish-cycling is the phenomenon of tossing anything and everything that could possibly, maybe, sort of be recycled into the recycling bin," Visy's submission read.</p>
+							<a href="https://www.abc.net.au/news/2019-03-02/forget-recycling-we-need-to-fix-wish-cycling/10829542" class="rm"> View All News &nbsp;  <i class="icon-plus"></i></a>
+							</div>
+						</li>
+
+							<li>
+							<div class="span5 first" id="img_holder3">
+								<div class="img">
+								<img src="{% static 'images/news3.png'%}" alt="" />
+								</div>
+								<div class="img_title">
+								<a href="#"> ABC NEWS </a>
+								<p> Victoria's recycling crisis goes from bad to worse as another plant shuts down  </p>
+								</div>
+							</div>
+							<div class="span5 ns_desc" >
+							<a href="#" class="title">  Victoria's recycling crisis goes from bad to worse as another plant shuts down <span class="h-line"></span> </a>
+ 							<p> Another Victorian recycling plant has shut its doors to recyclable waste, putting increased pressure on the state's struggling system and forcing more councils to turn to landfill. The South Geelong plant is the third of SKM Recycling's facilities to close, after the Environment Protection Authority (EPA) shut the company's plants at Laverton and Coolaroo amid fears about the fire risk posed by growing stockpiles. </p>
+							<a href="https://www.abc.net.au/news/2019-02-21/victorian-recycling-crisis-deepens-as-another-plant-shuts/10833620" class="rm"> View All News &nbsp;  <i class="icon-plus"></i></a>
+							</div>
+						</li>
+
+							<li>
+							<div class="span5 first" id="img_holder4">
+								<div class="img">
+								<img src="{% static 'images/news4.png'%}" alt="" />
+								</div>
+								<div class="img_title">
+								<a href="#"> NEWS.COM.AU </a>
+								<p> Aussies’ love of takeaway during Covid pandemic sparks recycling bin crisis </p>
+								</div>
+							</div>
+							<div class="span5 ns_desc" >
+							<a href="#" class="title">  Aussies’ love of takeaway during Covid pandemic sparks recycling bin crisis <span class="h-line"></span> </a>
+ 							<p> Australians’ love for UberEats and other home delivered takeaway food during the coronavirus pandemic appears to have wrecked havoc on the nation’s bins. Lockdowns have fuelled a significant increase in household waste, with people’s changed eating habits in particular causing headaches for council recycling services. </p>
+							<a href="https://www.news.com.au/technology/environment/sustainability/aussies-love-of-takeaway-during-covid-pandemic-sparks-recycling-bin-crisis/news-story/412bc1e1073e29179ce6f387aa922e24" class="rm"> View All News &nbsp;  <i class="icon-plus"></i></a>
+							</div>
+						</li>
+						</ul>
+				</figure>
+			</section>
+		</section>
+	</section>
+<!-- End of Charity News & Progress Section -->
+	{% include 'footer.html' %}
+</div>
+<!-- End Main Wrapper -->
+<!-- JS Files Start -->
+<script type="text/javascript" src="{% static 'js/lib-1-9-1.js' %}"></script><!-- lib Js -->
+<script type="text/javascript" src="{% static 'js/lib-1-7-1.js' %}"></script><!-- lib Js -->
+<script type="text/javascript" src="{% static 'js/modernizr.js' %}"></script><!-- Modernizr -->
+<script type="text/javascript" src="{% static 'js/easing.js' %}"></script><!-- Easing js -->
+<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script><!-- Bootstrap -->
+<script type="text/javascript" src="{% static 'js/bxslider.js' %}"></script><!-- BX Slider -->
+<script type="text/javascript" src="{% static 'js/clearInput.js' %}"></script><!-- Input Clear -->
+<script type="text/javascript" src="{% static 'js/smooth-scroll.js' %}"></script><!-- smooth Scroll -->
+<script type="text/javascript" src="{% static 'js/prettyPhoto.js' %}"></script><!-- Pretty Photo -->
+<script type="text/javascript" src="{% static 'js/social.js' %}"></script><!-- Social Media Hover Effect -->
+<script type="text/javascript" src="{% static 'js/countdown.js' %}"></script><!-- Event Counter -->
+<script type="text/javascript" src="{% static 'js/custom.js' %}"></script><!-- Custom / Functions -->
+<!--[if IE 8]>
+     <script src="{% static 'js/ie8_fix_maxwidth.js'%}" type="text/javascript"></script>
+<![endif]-->
+</body>
+</html>

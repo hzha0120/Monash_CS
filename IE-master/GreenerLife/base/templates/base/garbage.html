@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="post" enctype="multipart/form-data" action="/garbageClassification/">
+
+   <div class="form-group">
+        <input name="garbageImage" type="file" id="button">
+    </div>
+
+    {% csrf_token %}
+    <button type="submit" class="btn btn-success btn-block">注册</button>
+<div id = "newpic">
+</div>
+</form>
+</body>
+</html>
+<script>
+     $.ajax({
+            url: "/garbageClassification/", //请求路径
+            type: 'POST', // 请求类型
+            data: formData, // 请求数据
+            //dataType: "JSON", // JSON格式不对
+            dataType: "text", // 返回数据格式
+            contentType: false, //表示不处理数据
+            processData: false,
+            cache: false,
+            success: function (data) {
+                console.log("上传成功打印:"+data);
+                if (data != null){
+                    console.log("返回的数据："+data)
+                    $('#newpic').append("<img src="+'"data:image/jpg;base64,'+data+'">')
+                }
+                if (data == null){
+                    console.log("返回数据为空")
+                }
+            },
+            error: function (data) {
+                console.log("数据返回失败")
+                console.log(data);
+            }
+        });
+</script>

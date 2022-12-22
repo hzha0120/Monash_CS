@@ -1,0 +1,111 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>GreenerLife Home Page </title>
+    {% load static %}
+<!--[if lt IE 9]>
+	<script src="{% static 'js/html5shiv.js'%}"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="{% static 'js/mq.js'%}"></script>
+<![endif]-->
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width">
+<!-- Css Files Start -->
+<link href="{% static 'css/style.css'%}" rel="stylesheet" type="text/css" /><!-- All css -->
+<link href="{% static 'css/bootstrap.css'%}" rel="stylesheet" type="text/css" /><!-- Bootstrap Css -->
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="{% static 'css/customIE.css'%}" </><![endif]-->
+<link href="{% static 'css/font-awesome.css'%}" rel="stylesheet" type="text/css" /><!-- Font Awesome Css -->
+<link href="{% static 'css/font-awesome-ie7.css'%}" rel="stylesheet" type="text/css" /><!-- Font Awesome iE7 Css -->
+<!-- Css Files End -->
+<!-- Social Icons no JS -->
+<noscript>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/nj.css' %}" />
+</noscript>
+<!-- Social Icons no JS -->
+
+</head>
+<body>
+<!-- Start Main Wrapper -->
+<!-- Start of Header -->
+	<header>
+  <!-- Start Main Header -->
+
+  <section class="logo_container">
+		  <section class="container-fluid container">
+				<section class="row-fluid">
+					  <section class="span4">
+							<h1 id="logo">
+								<a href="{% url 'index' %}"> GreenerLife</a>
+							</h1>
+						</section>
+
+				</section>
+			</section>
+  </section>
+	<!-- Main Nav Bar -->
+			<nav id="nav">
+				<section class="container-fluid container">
+					<section class="row-fluid">
+			  <div class="navbar navbar-inverse">
+				<div class="navbar-inner">
+				  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				  <div class="nav-collapse collapse">
+					<ul class="nav">
+
+					<li class="active"> <a href="{% url 'index' %}"> Home </a> </li>
+
+
+					  <li class="dropdown"> <a class="dropdown-toggle"> E-waste	<b class="caret"></b> </a>
+						<ul class="dropdown-menu">
+							<li><a href="{% url 'e_waste' %}">E-Waste Site</a></li>
+							<li><a href="{% url 'e_waste_classification' %}">E-waste classification</a></li>
+
+						</ul>
+					  </li>
+						clothing
+
+					  <li > <a class="dropdown-toggle" href="{% url 'clothing' %}"> Clothing </a></li>
+						<ul class="dropdown-menu">
+							<li><a href="crowdfunding_listing.html">placeholder</a></li>
+							<li><a href="crowdfunding_detail.html">placeholder</a></li>
+							<li><a href="crowdfunding_payment.html">placeholder</a></li>
+						</ul>
+					  </li>
+
+ 					  <li class="dropdown"> <a class="dropdown-toggle" href="#" >  placeholder <b class="caret"></b> </a>
+						<ul class="dropdown-menu">
+							<li><a href="#">placeholder</a></li>
+							<li><a href="#">placeholder</a></li>
+							<li><a href="#">placeholder</a></li>
+							<li><a href="#">placeholder</a></li>
+							<li><a href="#">placeholder</a></li>
+						</ul>
+					  </li>
+
+  					  <li class="dropdown"> <a class="dropdown-toggle" href="#" >  placeholder<b class="caret"></b> </a>
+						<ul class="dropdown-menu">
+						<li><a href="#">placeholder</a></li>
+							<li><a href="#">placeholder</a></li>
+ 						</ul>
+					  </li>
+
+   					  <li class="dropdown"> <a class="dropdown-toggle" href="{% url 'about_us' %}" >  About Us <b class=""></b> </a></li>
+					</ul>
+				  </div>
+				  <!--/.nav-collapse -->
+				</div>
+				<!-- /.navbar-inner -->
+			  </div>
+			  <!-- /.navbar -->
+					</section>
+				</section>
+			</nav>
+	<!-- End Main Nav Bar -->
+	 </header>
+<!-- End of Header -->
+</body>
+</html>

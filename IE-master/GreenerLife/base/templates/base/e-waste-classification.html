@@ -1,0 +1,712 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>E-waste - GreenerLife </title>
+	{% block content %}
+    {% load static %}
+<!--[if lt IE 9]>
+	<script src="{% static 'js/html5shiv.js'%}"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="{% static 'js/mq.js'%}"></script>
+<![endif]-->
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width">
+<!-- Css Files Start -->
+<link href="{% static 'css/style.css'%}" rel="stylesheet" type="text/css" /><!-- All css -->
+<link href="{% static 'css/bootstrap.css'%}" rel="stylesheet" type="text/css" /><!-- Bootstrap Css -->
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="{% static 'css/customIE.css'%}" </><![endif]-->
+<link href="{% static 'css/font-awesome.css'%}" rel="stylesheet" type="text/css" /><!-- Font Awesome Css -->
+<link href="{% static 'css/font-awesome-ie7.css'%}" rel="stylesheet" type="text/css" /><!-- Font Awesome iE7 Css -->
+<!-- Css Files End -->
+<!-- Social Icons no JS -->
+<noscript>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/nj.css' %}" />
+</noscript>
+<!-- Social Icons no JS -->
+
+</head>
+<body>
+<!-- Start Main Wrapper -->
+<div class="wrapper">
+<!-- Start of Header -->
+	{% include 'header.html' %}
+<!-- End of Header -->
+
+<!-- Title & BreadCrumbs -->
+<section class="mtop">
+	<section class="container-fluid container">
+		<section class="row-fluid">
+<!-- Page Title -->
+		<section id="donation_box">
+			<section class="container container-fluid">
+				<section class="row-fluid">
+				<figure class="span12">
+					<h2> E-waste Classification </h2>
+				</figure>
+				</section>
+			</section>
+		</section>
+<!-- end of Page Title -->
+		</section>
+		<section class="row-fluid">
+			<!-- BreadCrumbs -->
+				<figure id="breadcrumbs" class="span12">
+					<ul class="breadcrumb">
+					<li><a href="{% url 'index' %}">Home</a> <span class="divider">/</span></li>
+					<li class="active">E-waste Classification</li>
+					</ul>
+				</figure>
+			<!-- End of breadcrumbs -->
+		</section>
+	</section>
+</section>
+<!-- End of Tile & Breadcrumbs -->
+
+<!-- Page Content Container -->
+<section id="content" class="mbtm blog">
+	<section class="container-fluid container">
+	
+		<section class="row-fluid">
+			<section class="horizontal_tabs_wrapper span12 first mbtm2">
+			<figure class="span3" id="horizontal_tabs">
+				<ul  id="myTab">
+					<li class="active"><a data-toggle="tab" href="#home"> What is E-waste?</a></li>
+					<li class=""><a data-toggle="tab" href="#design"> E-waste drop-off points</a></li>
+					<li class=""><a data-toggle="tab" href="#developer"> Where to take common e-waste items</a></li>
+					<li class=""><a data-toggle="tab" href="#minimize"> How to Minimize the E-waste</a></li>
+				</ul>
+			</figure>
+			
+			<figure class="span9" id="horizontal_tabs_content">			
+					<div class="tab-content" id="myTabContent">
+							  <div id="home" class="tab-pane fade active in">
+							  <h2> What is E-waste? </h2>
+								  <p>E-waste is any item with a plug, battery or power cord that’s no longer working or wanted. It covers a whole range of items from phones and refrigerators to fluorescent light tubes.</p>
+								<div class="accordion faq_accordion" id="accordion1">
+									<div class="accordion-group">
+										<div class="accordion-heading">
+										<a class="accordion-toggle active" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+											 <span class="toggle_faq"><i class="icon-chevron-right"></i> </span>  <h3>	<strong> Electrical and electronic tools </strong> </h3>
+										</a>
+										</div>
+										<div id="collapseOne" class="accordion-body collapse in">
+											<div class="accordion-inner">
+												<div class = "span7">
+													<ol>
+														<li>  Batteries	 </li>
+														<li>  Drills </li>
+														<li>  Lawn mowers </li>
+														<li>  Saws </li>
+														<li>  Sewing machines </li>
+													</ol>
+												</div>
+												<div class = "span5">
+													<IMG SRC="{% static 'images/Photo-Waste-Batteries.jpg'%}"/>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle inactive" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
+												 <span class="toggle_faq"><i class="icon-chevron-right"></i> </span>  <h3>	<strong> IT, telecommunications and TV equipment </strong> </h3>
+											</a>
+										</div>
+										<div id="collapseTwo" class="accordion-body collapse">
+											<div class="accordion-inner">
+												<div class = "span7">
+													<ol>
+														<li>  Computers	 </li>
+														<li>  Laptops </li>
+														<li>  Mobile phones </li>
+														<li>  Printers </li>
+														<li>  Remote controls </li>
+														<li>  Televisions </li>
+													</ol>
+												</div>
+												<div class = "span5">
+													<IMG SRC="{% static 'images/Photo-dispose-of-mobile-phones-880x250.jpg'%}"/>
+													<IMG SRC="{% static 'images/Photo-Waste-Laptop.jpg'%}"/>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle inactive" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
+												 <span class="toggle_faq"><i class="icon-chevron-right"></i> </span>  <h3>	<strong> Home appliances (large) </strong> </h3>
+											</a>
+										</div>
+										<div id="collapseThree" class="accordion-body collapse">
+											<div class="accordion-inner">
+												<div class = "span7">
+													<ol>
+														<li>  Air conditioners	 </li>
+														<li>  Cookers </li>
+														<li>  Electric fans </li>
+														<li>  Microwaves </li>
+														<li>  Refrigerators </li>
+														<li>  Washing machines </li>
+													</ol>
+												</div>
+												<div class = "span5">
+													<IMG SRC="{% static 'images/shopping.png'%}"/>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle inactive" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour">
+												<span class="toggle_faq"><i class="icon-chevron-right"></i> </span>  <h3>	<strong> Home appliances (small) </strong> </h3>
+											</a>
+										</div>
+										<div id="collapseFour" class="accordion-body collapse">
+											<div class="accordion-inner">
+												<div class = "span7">
+												<ol>
+													<li>  Coffee machines	 </li>
+													<li>  Hair dryers </li>
+													<li>  Irons </li>
+													<li>  Toasters </li>
+													<li>  Watches </li>
+												</ol>
+												</div>
+												<div class = "span5">
+													<IMG SRC="{% static 'images/coffee.png'%}"/>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle inactive" data-toggle="collapse" data-parent="#accordion1" href="#collapseFive">
+												<span class="toggle_faq"><i class="icon-chevron-right"></i> </span>  <h3>	<strong> Lighting equipment </strong> </h3>
+											</a>
+										</div>
+										<div id="collapseFive" class="accordion-body collapse">
+											<div class="accordion-inner">
+												<div class="span7">
+													<ol>
+														<li>  Compact fluorescent lamps	 </li>
+														<li>  Discharge lamps </li>
+														<li>  Fluorescent lamps </li>
+														<li>  High-intensity LEDs </li>
+													</ol>
+												</div>
+												<div class = "span5">
+													<IMG SRC="{% static 'images/light.png'%}"/>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle inactive" data-toggle="collapse" data-parent="#accordion1" href="#collapseSix">
+												<span class="toggle_faq"><i class="icon-chevron-right"></i> </span>  <h3>	<strong> Other items </strong> </h3>
+											</a>
+										</div>
+										<div id="collapseSix" class="accordion-body collapse">
+											<div class="accordion-inner">
+												<div class="span7">
+												<ol>
+													<li>  Automatic dispensers	 </li>
+													<li>  Medical devices </li>
+													<li>  Printer cartridges </li>
+													<li>  Thermostats </li>
+												</ol>
+												</div>
+											</div>
+											<div class = "span5">
+													<IMG SRC="{% static 'images/cartridges.png'%}"/>
+												</div>
+
+										</div>
+									</div>
+
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle inactive" data-toggle="collapse" data-parent="#accordion1" href="#collapseSeven">
+												<span class="toggle_faq"><i class="icon-chevron-right"></i> </span>  <h3>	<strong> Toys, leisure and sports equipment </strong> </h3>
+											</a>
+										</div>
+										<div id="collapseSeven" class="accordion-body collapse">
+											<div class="accordion-inner">
+												<div class="span7">
+												<ol>
+													<li>  Amplifiers	 </li>
+													<li>  Consoles </li>
+													<li>  Hand-held video games </li>
+													<li>  Musical instruments </li>
+													<li>  Radios </li>
+													<li>  Toys like electric trains and racing cars </li>
+												</ol>
+												</div>
+											</div>
+											<div class = "span5">
+													<IMG SRC="{% static 'images/switch.png'%}"/>
+												</div>
+										</div>
+									</div>
+
+									</div>
+							  </div>
+							  <div id="design" class="tab-pane fade">
+								  <h2> E-waste drop-off points</h2>
+										<p> E-waste should not be put in your rubbish or recycling bin. Take e-waste to a drop-off point. To find your closest e-waste drop-off point, use the Recycling Near You directory
+										</p>
+								  <div class="accordion faq_accordion" id="accordion3">
+									<div class="accordion-group">
+										<div class="accordion-heading">
+										<a class="accordion-toggle active" data-toggle="collapse" data-parent="#accordion3" href="#collapse1">
+											 <span class="toggle_faq"><i class="icon-chevron-right"></i> </span>  <h3>	<strong> When there are no e-waste drop-off points near you </strong> </h3>
+										</a>
+										</div>
+										<div id="collapse1" class="accordion-body collapse in">
+											<div class="accordion-inner">
+												<p>If there are currently no drop-off points near you, or you have a different electronic item to get rid of:</p>
+											<ol>
+												<li>  using our website's finding E-waste collection point</li>
+												<li>  check your local council's website for other disposal options in your area	 </li>
+												<li>  pass it onto your friends, family or sell second hand, if it’s still working </li>
+												<li>  have it collected from your home through eMeals </li>
+											</ol></div></div>
+<!--											<a href="{% url 'e_waste' %}" class="tier_button"> Quick Access </a>-->
+											<form action="{% url 'e_waste_classification' %}" method="GET">
+												<label for="site"><h2>Choose a council to find E-Waste collection sites</h2></label>
+
+											<select class="target"  name="ESite" id="site">
+												<option value="Alpine">Alpine</option>
+												<option value="Ararat">Ararat</option>
+												<option value="Ballarat">Ballarat</option>
+												<option value="Banyule">Banyule</option>
+												<option value="Bass Coast">Bass Coast</option>
+												<option value="Baw Baw">Baw Baw</option>
+												<option value="Bayside">Bayside</option>
+												<option value="Benalla">Benalla</option>
+												<option value="Boroondara">Boroondara</option>
+												<option value="Brimbank">Brimbank</option>
+												<option value="Buloke">Buloke</option>
+												<option value="Campaspe">Campaspe</option>
+												<option value="Cardinia">Cardinia</option>
+												<option value="Casey">Casey</option>
+												<option value="Central Goldfields">Central Goldfields</option>
+												<option value="Corangamite">Corangamite</option>
+												<option value="Darebin">Darebin</option>
+												<option value="East Gippsland">East Gippsland</option>
+												<option value="Falls Creek">Falls Creek</option>
+												<option value="Frankston">Frankston</option>
+												<option value="Gannawarra">Gannawarra</option>
+												<option value="Glenelg">Glenelg</option>
+												<option value="Golden Plains">Golden Plains</option>
+												<option value="Greater Bendigo">Greater Bendigo</option>
+												<option value="Greater Geelong">Greater Geelong</option>
+												<option value="Greater Shepparton">Greater Shepparton</option>
+												<option value="Hepburn">Hepburn</option>
+												<option value="Hindmarsh">Hindmarsh</option>
+												<option value="Horsham">Horsham</option>
+												<option value="Hume">Hume</option>
+												<option value="Indigo">Indigo</option>
+												<option value="Kingston">Kingston</option>
+												<option value="Latrobe">Latrobe</option>
+												<option value="Loddon">Loddon</option>
+												<option value="Macedon Ranges">Macedon Ranges</option>
+												<option value="Mansfield">Mansfield</option>
+												<option value="Melbourne">Melbourne</option>
+												<option value="Melton">Melton</option>
+												<option value="Mildura">Mildura</option>
+												<option value="Mitchell">Mitchell</option>
+												<option value="Moira">Moira</option>
+												<option value="Monash">Monash</option>
+												<option value="Moonee Valley">Moonee Valley</option>
+												<option value="Moorabool">Moorabool</option>
+												<option value="Mornington Peninsula">Mornington Peninsula</option>
+												<option value="Mount Alexander">Mount Alexander</option>
+												<option value="Moyne">Moyne</option>
+												<option value="Mt Buller">Mt Buller</option>
+												<option value="Mt Hotham">Mt Hotham</option>
+												<option value="Murrindindi">Murrindindi</option>
+												<option value="Nillumbik">Nillumbik</option>
+												<option value="Northern Grampians">Northern Grampians</option>
+												<option value="Port Phillip">Port Phillip</option>
+												<option value="Pyrenees">Pyrenees</option>
+												<option value="South Gippsland">South Gippsland</option>
+												<option value="Southern Grampians">Southern Grampians</option>
+												<option value="Stonnington">Stonnington</option>
+												<option value="Strathbogie">Strathbogie</option>
+												<option value="Surf Coast">Surf Coast</option>
+												<option value="Swan Hill">Swan Hill</option>
+												<option value="Towong">Towong</option>
+												<option value="Wangaratta">Wangaratta</option>
+												<option value="Warrnambool">Warrnambool</option>
+												<option value="Wellington">Wellington</option>
+												<option value="West Wimmera">West Wimmera</option>
+												<option value="Whitehorse">Whitehorse</option>
+												<option value="Whittlesea">Whittlesea</option>
+												<option value="Wodonga">Wodonga</option>
+												<option value="Wyndham">Wyndham</option>
+												<option value="Yarra">Yarra</option>
+												<option value="Yarra Ranges">Yarra Ranges</option>
+												<option value="Yarriambiack">Yarriambiack</option>
+											</select>
+
+                            </form>
+										<div>
+                                <div class="accordion faq_accordion" id="accordion4">
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a class="accordion-toggle active" data-toggle="collapse"
+                                               data-parent="#accordion3" href="#collapse1">
+                                                <span class="toggle_faq"><i class="icon-chevron-right"></i> </span>
+                                                <h3><strong> Clothing Collection Point </strong></h3> <br>
+                                            </a>
+                                        </div>
+
+                                        <div id="collapse5" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                                <table id="myTable" border="1">
+                                                    <tr>
+                                                        <th>Address</th>
+                                                        <th>Ownership</th>
+                                                        <th>Council</th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+												<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgX16AyleX9Cjjnno5uYQKyliz-_NGKO4"></script>
+                            <div id="map_canvas"
+                                 style="border: 2px solid #3872ac; min-height: 500px; width: 100%; margin: 5px; padding: 0px;"></div>
+
+
+									</div>
+							  </div>
+							  </div>
+							  <div id="developer" class="tab-pane fade">
+							  	<h2> Where to take common e-waste items? </h2>
+								<Section class="product_list_holder" >
+
+									<figure class="span12 first" id="product">
+
+										<div class="product_img span4 first">
+												<img src="{% static 'images/Photo-Waste-Batteries.jpg'%}" alt="Product Image" style="width:201px;height:151px;" />
+										</div>
+										<div class="span8 product_description">
+										<h3> <a href="#"> Batteries </a> </h3>
+										<p> Household batteries can be recycled at no cost. To find drop-off points, visit the B-cycle website.For car battery drop-off sites, visit the Car batteries page – Recycling Near You website.</p>
+										</div>
+
+									</figure>
+									<figure class="span12 first" id="product">
+
+										<div class="product_img span4 first">
+												<img src="{% static 'images/Photo-Waste-Laptop.jpg'%}" alt="Product Image" style="width:201px;height:151px;"  />
+
+										</div>
+										<div class="span8 product_description">
+										<h3> <a href="#"> Computers and laptops </a> </h3>
+										<p> The National Television and Computer Recycling Scheme has designated collection points across Victoria.</p>
+										</div>
+
+									</figure>
+									<figure class="span12 first" id="product">
+
+										<div class="product_img span4 first">
+												<img src="{% static 'images/Photo-dispose-of-fluorescent-lights-880x250.jpg'%}" alt="Product Image" style="width:201px;height:151px;"  />
+
+										</div>
+										<div class="span8 product_description">
+										<h3> <a href="#"> Light bulbs </a> </h3>
+										<p> Fluorescent tubes and light bulbs can be disposed of for free at permanent drop-off sites located at most council-operated transfer stations. </p>
+
+										</div>
+
+									</figure>
+									<figure class="span12 first" id="product">
+
+										<div class="product_img span4 first">
+												<img src="{% static 'images/Photo-dispose-of-mobile-phones-880x250.jpg'%}" alt="Product Image"  style="width:201px;height:151px;" />
+
+										</div>
+										<div class="span8 product_description">
+										<h3> <a href="#"> Mobile phones </a> </h3>
+											<p> MobileMuster is a free, not-for-profit mobile phone recycling program that accepts all brands and types of mobile phones, plus their batteries, chargers and accessories.Dropping items off is free but don't forget to properly remove your personal data.</p>
+										</div>
+									</figure>
+									<figure class="span12 first" id="product">
+
+										<div class="product_img span4 first">
+												<img src="{% static 'images/Photo-Waste-Smoke-detector.jpg'%}" alt="Product Image" style="width:201px;height:151px;"   />
+
+										</div>
+										<div class="span8 product_description">
+										<h3> <a href="#"> Smoke detectors </a> </h3>
+											<p> Domestic smoke alarms are not included in the e-waste ban and can be disposed of in your rubbish bin.</p>
+										</div>
+									</figure>
+									<figure class="span12 first" id="product">
+
+										<div class="product_img span4 first">
+												<img src="{% static 'images/Photo-dispose-of-whitegoods-880x250.jpg'%}" alt="Product Image" style="width:201px;height:151px;"  />
+
+										</div>
+										<div class="span8 product_description">
+										<h3> <a href="#"> Whitegoods </a> </h3>
+											<p> Metal from whitegoods can be recycled again and again to make new products, so it's important that they don't end up in landfill. Visit the Whitegoods recycler lookup - Recycling Near You website</p>
+										</div>
+									</figure>
+								</Section>
+							  </div>
+								 <div id="minimize" class="tab-pane fade">
+							  	<h2> Where to take common e-waste items? </h2>
+								<Section class="product_list_holder" >
+
+									<figure class="span12 first" id="product">
+										<figure class="widget events">
+                        <h3> <i class="icon-bullhorn"></i> Tips - Minimize the E-waste </h3>
+                        <ul id="posts1">
+                            <li>
+                                <div class="post_content span12">
+                                    <h4> Consider if you really need a new item  </h4>
+                                    <p>If you purchase a new product you don’t really need, or only require for a one-off job, there’s a good chance it’s going to sit at the back of a drawer or packed away in the shed once you’re finished. Instead, see if you can borrow or rent one first. For instance, try searching online for ‘tool library near me’ for your next odd job around the house.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </figure>
+
+                    <figure class="widget events">
+                        <h3> <i class="icon-bullhorn"></i> Tips - Minimize the E-waste </h3>
+                        <ul id="posts2">
+                            <li>
+                                <div class="post_content span12">
+                                    <h4> Consider buying secondhand  </h4>
+                                    <p>The idea of regularly upgrading devices has become all too common in our society. With new models being released regularly, we can feel compelled to purchase the latest version. But it’s worth checking the second-hand market or purchasing an item that’s pre-loved or refurbished before buying new.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </figure>
+                     <figure class="widget events">
+                        <h3> <i class="icon-bullhorn"></i> Tips - Minimize the E-waste  </h3>
+                        <ul id="posts3">
+                            <li>
+                                <div class="post_content span12">
+                                    <h4>  Extend the life of your electronics </h4>
+                                    <p>Try to get the most of your products by:</p>
+                                    <ul><li>keeping them clean</li><li>avoiding overcharging batteries</li><li>using protective covers on tablets and phones.</li></ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </figure>
+                     <figure class="widget events">
+                        <h3> <i class="icon-bullhorn"></i> Tips - Minimize the E-waste  </h3>
+                        <ul id="posts4">
+                            <li>
+                                <div class="post_content span12">
+                                    <h4>  Donate or sell working electronics  </h4>
+                                    <p>If your electronics are still in good condition, consider donating or selling them to others who will find a use for them. This is one of the best ways to stop unwanted electrical items from entering the waste stream.Not only does this extend the product's life, it could earn you a bit of extra money in the process.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </figure>
+									</figure>
+								</Section>
+								 </div>
+							 
+							 </div>
+			</figure>
+			
+			</section>
+
+		</section>
+	</section>
+
+</section>
+<!-- Page Content Container -->
+	 
+<!-- Start of Footer -->
+	{% include 'footer.html' %}
+<!-- End of Footer -->
+</div>
+<!-- End Main Wrapper -->
+<!-- JS Files Start -->
+<script type="text/javascript" src="{% static 'js/lib-1-9-1.js' %}"></script><!-- lib Js -->
+<script type="text/javascript" src="{% static 'js/lib-1-7-1.js' %}"></script><!-- lib Js -->
+<script type="text/javascript" src="{% static 'js/modernizr.js' %}"></script><!-- Modernizr -->
+<script type="text/javascript" src="{% static 'js/easing.js' %}"></script><!-- Easing js -->
+<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script><!-- Bootstrap -->
+<script type="text/javascript" src="{% static 'js/bxslider.js' %}"></script><!-- BX Slider -->
+<script type="text/javascript" src="{% static 'js/clearInput.js' %}"></script><!-- Input Clear -->
+<script type="text/javascript" src="{% static 'js/smooth-scroll.js' %}"></script><!-- smooth Scroll -->
+<script type="text/javascript" src="{% static 'js/prettyPhoto.js' %}"></script><!-- Pretty Photo -->
+<script type="text/javascript" src="{% static 'js/social.js' %}"></script><!-- Social Media Hover Effect -->
+<script type="text/javascript" src="{% static 'js/countdown.js' %}"></script><!-- Event Counter -->
+<script type="text/javascript" src="{% static 'js/custom.js' %}"></script><!-- Custom / Functions -->
+<!--[if IE 8]>
+     <script src="{% static 'js/ie8_fix_maxwidth.js'%}" type="text/javascript"></script>
+<![endif]-->
+<script src="{% static 'js/bootstrap-select.js'%}"></script>
+</body>
+<script>
+    var locations = [];
+
+    $('.target').change(function () {
+    var table = document.getElementById("myTable");
+    var totalRowCount = table.rows.length;
+    if(totalRowCount<2){
+    console.log('skip');}
+    else{
+    for (let i = totalRowCount-1; i >0; i--) {
+        document.getElementById("myTable").deleteRow(i);
+}}
+    var location = $('select option:selected').val();
+    locations = [];
+    var i =0;
+    {% for ewaste in ewastes %}
+        if(location == "{{ewaste.site}}"){
+        locations[i] = "{{ewaste.name}}"+","+"{{ewaste.site}}" + ",Australia";
+        i+=1;
+        var table = document.getElementById("myTable");
+  var row = table.insertRow(-1);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  cell1.innerHTML = "{{ewaste.name}}";
+  cell2.innerHTML = "{{ewaste.ownership}}";
+  cell3.innerHTML = "{{ewaste.site}}";
+  }
+    {% endfor %}
+    initialize();
+    });
+
+
+
+var geocoder;
+var map;
+var lat;
+var lon;
+var bounds = new google.maps.LatLngBounds();
+
+function initialize() {
+  map = new google.maps.Map(
+    document.getElementById("map_canvas"), {
+      center: new google.maps.LatLng( -37.840935, 144.946457),
+      zoom: 13,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+  geocoder = new google.maps.Geocoder();
+
+  for (i = 0; i < locations.length; i++) {
+
+
+    geocodeAddress(locations, i);
+  }
+}
+google.maps.event.addDomListener(window, "load", initialize);
+
+function geocodeAddress(locations, i) {
+
+  var address = locations[i];
+  geocoder.geocode({
+      'address': locations[i]
+    },
+
+    function(results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        var marker = new google.maps.Marker({
+          icon: 'http://maps.google.com/mapfiles/ms/icons/blue.png',
+          map: map,
+          position: results[0].geometry.location,
+
+          animation: google.maps.Animation.DROP,
+          address: address
+
+        })
+        infoWindow(marker, map, address,results[0].geometry.location);
+        bounds.extend(marker.getPosition());
+        map.fitBounds(bounds);
+      }
+    });
+}
+
+function infoWindow(marker, map, address, position) {
+  getLocation();
+  google.maps.event.addListener(marker, 'click', function() {
+    var lat1 = position.lat();
+    var lon1 = position.lng();
+    var distance = calcCrow(lat, lon, lat1, lon1).toFixed(2);
+    console.log(lat, lon, lat1, lon1);
+    var html =  "<div><h3>" + address  + "</h3><p>"+distance.toString()+"Km from your location." + "<br></div></p></div>";
+    iw = new google.maps.InfoWindow({
+      content: html,
+      maxWidth: 350
+    });
+    iw.open(map, marker);
+  });
+}
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  lat= Number(position.coords.latitude);
+  lon = Number(position.coords.longitude);
+}
+
+function calcCrow(lat1, lon1, lat2, lon2)
+    {
+      var R = 6371; // km
+      var dLat = toRad(lat2-lat1);
+      var dLon = toRad(lon2-lon1);
+      var lat1 = toRad(lat1);
+      var lat2 = toRad(lat2);
+
+      var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+        Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2);
+      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+      var d = R * c;
+      return d;
+    }
+
+    // Converts numeric degrees to radians
+    function toRad(Value)
+    {
+        return Value * Math.PI / 180;
+    }
+
+
+
+function createMarker(results) {
+  var marker = new google.maps.Marker({
+    icon: 'http://maps.google.com/mapfiles/ms/icons/red.png',
+    map: map,
+    position: results[0].geometry.location,
+
+    animation: google.maps.Animation.DROP,
+    address: address
+  })
+  bounds.extend(marker.getPosition());
+  map.fitBounds(bounds);
+  return marker;
+}
+</script>
+
+</body>
+{% endblock content %}
+
+</html>

@@ -1,0 +1,61 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<title>Garbage Detection </title>
+{% load static %}
+<section class="mtop">
+    <section class="container-fluid container">
+        <section class="row-fluid">
+            <section id="donation_box">
+                <section class="container container-fluid">
+                    <section class="row-fluid">
+                        <div class="span8 first"><h2> Garbage Detection </h2></div>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="row-fluid">
+            <!-- BreadCrumbs -->
+            <figure id="breadcrumbs" class="span12">
+                <ul class="breadcrumb">
+                    <li><a href="{% url 'index' %}">Home</a> <span class="divider">/</span></li>
+                    <li class="active">Garbage Detection</li>
+                </ul>
+            </figure>
+            <!-- End of breadcrumbs -->
+        </section>
+    </section>
+</section>
+<section id="content" class="mbtm blog">
+    <section class="container-fluid container">
+        <section class="row-fluid">
+            <section class="span12" id="blog_listing">
+                <figure class="blog_item">
+                    <div class="outer_lyr span12 first">
+                        <div class="inner_lyr">
+                            <h3>Garbage Detection</h3>
+                            <p style="font-size: 17px">Data shows 84 - 96% of kerbside recycling is recycled, and the remaining 4 -
+                                16% that goes to landfill is primarily a result of the wrong thing going in the wrong bin.
+
+                            </p>
+                        </div>
+                    </div>
+                </figure></section></section></section></section>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于OpenCv+Django的网络实时视频流传输（前后端分离）</title>
+    <style>
+        #video {
+            width: 720px;
+            height: 576px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 显示视频流 -->
+    <div align="center"><img src="{% url 'video' %}" id="video"></div>
+</body>
+
+{% endblock content %}
